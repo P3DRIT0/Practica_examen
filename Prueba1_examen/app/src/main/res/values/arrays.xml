@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Pantallas">
+        <item>Autocompletar</item>
+        <item>Listviews</item>
+    </string-array>
+    <string-array name="Provincias">
+        <item>A Coruña</item>
+        <item>Lugo</item>
+        <item>Ourense</item>
+        <item>Pontevedra</item>
+    </string-array>
+    <string-array name="array_Ciudades">
+        <item>Vigo</item>
+        <item>Pontevedra</item>
+        <item>Santiago</item>
+        <item>Coruña</item>
+        <item>Ourense</item>
+        <item>Lugo</item>
+    </string-array>
+</resources>
