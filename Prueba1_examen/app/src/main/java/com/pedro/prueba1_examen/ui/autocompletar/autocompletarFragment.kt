@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.pedro.prueba1_examen.R
 import com.pedro.prueba1_examen.databinding.FragmentAutocompletarBinding
 
 class autocompletarFragment : Fragment() {
@@ -35,6 +37,24 @@ class autocompletarFragment : Fragment() {
         return root
     }
 
+
+    /***********************************************************/
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        with(binding.comunidades) {
+            setAdapter(
+                ArrayAdapter.createFromResource(
+                    requireContext(), R.array.comunidades_autonomas,
+                    android.R.layout.simple_spinner_item
+                )
+            )
+
+        }
+
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

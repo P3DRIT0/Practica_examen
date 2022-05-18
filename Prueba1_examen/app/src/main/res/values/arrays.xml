@@ -18,4 +18,23 @@
         <item>Ourense</item>
         <item>Lugo</item>
     </string-array>
+    <string-array name="comunidades_autonomas">
+        <item>Galicia</item>
+        <item>Pais Vasco</item>
+        <item>Castilla y Leon</item>
+        <item>Murcia</item>
+        <item>Andalucia</item>
+        <item>Madrid</item>
+        <item>Asturias</item>
+        <item>Valencia</item>
+        <item>Islas Canarias</item>
+        <item>Islas Baleares</item>
+    </string-array>
+    <string-array name="formas_jorge">
+        <item>Jorge cohibido</item>
+        <item>Jorge modo secso</item>
+        <item>Jorge canalla</item>
+        <item>Jorge guatón</item>
+        <item>Jorge hago las maletas y me voy</item>
+    </string-array>
 </resources>
