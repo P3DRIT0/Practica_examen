@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.pedro.prueba1_examen.databinding.FragmentHomeBinding
+import com.pedro.prueba1_examen.ui.recyclerview.reclyclerviewFragment
 
 class HomeFragment : Fragment() {
 
@@ -56,6 +57,9 @@ class HomeFragment : Fragment() {
 
         binding.listviews.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionNavHomeToNavSlideshow())
+        }
+        binding.RecyclerView.setOnClickListener{
+            findNavController().navigate(HomeFragmentDirections.actionNavHomeToNavRecyclerview())
         }
     }
 }

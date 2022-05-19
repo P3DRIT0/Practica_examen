@@ -37,4 +37,9 @@
         <item>Jorge guatón</item>
         <item>Jorge hago las maletas y me voy</item>
     </string-array>
+    <string-array name="Jorges">
+        <item>Jorge serio</item>
+        <item>Jorge piscinita</item>
+        <item>Jorge canalla</item>
+    </string-array>
 </resources>

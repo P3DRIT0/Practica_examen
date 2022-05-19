@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_slideshow"
             app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_recyclerview"
+            app:destination="@id/nav_recyclerview" />
     </fragment>
 
     <fragment
@@ -58,4 +61,19 @@
             android:name="usuario"
             app:argType="com.pedro.prueba1_examen.ui.gallery.Usuario" />
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_recyclerview"
+        android:name="com.pedro.prueba1_examen.ui.recyclerview.reclyclerviewFragment"
+        android:label="recyclerview"
+        tools:layout="@layout/fragment_recyclerview" >
+        <action
+            android:id="@+id/action_nav_recyclerview_to_reclyclerview_sencilloFragment"
+            app:destination="@id/reclyclerview_sencilloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reclyclerview_sencilloFragment"
+        android:name="com.pedro.prueba1_examen.ui.recyclerview.reclyclerview_sencilloFragment"
+        android:label="Modos de Jorge"
+        tools:layout="@layout/fragment_recyclersencillo" />
 </navigation>

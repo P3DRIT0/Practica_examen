@@ -14,6 +14,11 @@
         android:theme="@style/Theme.Prueba1_examen"
         tools:targetApi="31">
         <activity
+            android:name=".recycler_sencillo"
+            android:exported="false"
+            android:label="@string/title_activity_recycler_sencillo"
+            android:theme="@style/Theme.Prueba1_examen.NoActionBar" />
+        <activity
             android:name=".Usuario"
             android:exported="false"
             android:label="@string/title_activity_usuario"
