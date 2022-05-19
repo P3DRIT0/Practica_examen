@@ -70,10 +70,27 @@
         <action
             android:id="@+id/action_nav_recyclerview_to_reclyclerview_sencilloFragment"
             app:destination="@id/reclyclerview_sencilloFragment" />
+        <action
+            android:id="@+id/action_nav_recyclerview_to_menu_examen"
+            app:destination="@id/menu_examen" />
     </fragment>
     <fragment
         android:id="@+id/reclyclerview_sencilloFragment"
         android:name="com.pedro.prueba1_examen.ui.recyclerview.reclyclerview_sencilloFragment"
         android:label="Modos de Jorge"
         tools:layout="@layout/fragment_recyclersencillo" />
+    <fragment
+        android:id="@+id/menu_examen"
+        android:name="com.pedro.prueba1_examen.ui.recyclerview.Menu_examen"
+        android:label="fragment_menuex"
+        tools:layout="@layout/fragment_menuex" >
+        <action
+            android:id="@+id/action_menu_examen_to_simple2"
+            app:destination="@id/simple2" />
+    </fragment>
+    <fragment
+        android:id="@+id/simple2"
+        android:name="com.pedro.prueba1_examen.ui.recyclerview.Simple"
+        android:label="Simple"
+        tools:layout="@layout/fragment_simple" />
 </navigation>
