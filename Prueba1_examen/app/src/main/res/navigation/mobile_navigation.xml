@@ -87,10 +87,18 @@
         <action
             android:id="@+id/action_menu_examen_to_simple2"
             app:destination="@id/simple2" />
+        <action
+            android:id="@+id/action_menu_examen_to_compuesta2"
+            app:destination="@id/compuesta2" />
     </fragment>
     <fragment
         android:id="@+id/simple2"
         android:name="com.pedro.prueba1_examen.ui.recyclerview.Simple"
         android:label="Simple"
         tools:layout="@layout/fragment_simple" />
+    <fragment
+        android:id="@+id/compuesta2"
+        android:name="com.pedro.prueba1_examen.ui.recyclerview.Compuesta"
+        android:label="Compuesta"
+        tools:layout="@layout/fragmento_compuesto"/>
 </navigation>

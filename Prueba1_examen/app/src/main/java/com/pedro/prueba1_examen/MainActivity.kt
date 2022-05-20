@@ -2,6 +2,8 @@ package com.pedro.prueba1_examen
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -11,7 +13,9 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.findNavController
 import com.pedro.prueba1_examen.databinding.ActivityMainBinding
+import com.pedro.prueba1_examen.ui.recyclerview.Menu_examenDirections
 
 class MainActivity : AppCompatActivity() {
 

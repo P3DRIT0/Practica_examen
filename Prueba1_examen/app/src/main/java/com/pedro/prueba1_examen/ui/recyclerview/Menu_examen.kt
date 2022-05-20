@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.pedro.prueba1_examen.R
 import com.pedro.prueba1_examen.databinding.FragmentMenuexBinding
+import com.pedro.prueba1_examen.ui.home.HomeFragmentDirections
 
 
 class Menu_examen : Fragment() {
@@ -39,23 +40,34 @@ class Menu_examen : Fragment() {
         _binding = null
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return super.onOptionsItemSelected(item)
-
-        when(item.itemId){
-            R.id.simple->findNavController().navigate(Menu_examenDirections.actionMenuExamenToSimple2())
-            R.id.compuesta->findNavController().navigate(Menu_examenDirections.actionMenuExamenToSimple2())
-        }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.button.setOnClickListener {
             findNavController().navigate(Menu_examenDirections.actionMenuExamenToSimple2())
         }
         }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.simple -> {
+                findNavController().navigate(Menu_examenDirections.actionMenuExamenToSimple2())
+                true
+            }
+            R.id.compuesta -> {
+                findNavController().navigate(Menu_examenDirections.actionMenuExamenToCompuesta2())
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
-
-
-
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.main,menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+}
     /***********************************************************/
